@@ -24,7 +24,7 @@ public class MathControllerTest {
 	@Inject
 	AddService addService;
 
-	@MockBean
+	@MockBean(AddService.class)
 	AddService mockAddService() {
 		AddService mockAddService = mock(AddService.class);
 
